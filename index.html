@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link re="stylesheet" href="styles/normalize.css">
+  <script src="https://kit.fontawesome.com/9b2c296c58.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+
+  <title>Bůrger - nejlepší burgery na světě</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="images/logo.png" alt="Logo" class="logo">
+            <nav>
+              <ul>
+                <li><a href="#">Úvod</a></li>
+                <li><a href="#">O nás</a></li>
+                <li><a href="#">Nabídka</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
+    </div>
+    
+    <div class="page-title">
+          <div id="typed-strings">
+            <p>Zaručeně nejlepší místo na burger ve Zlíně!</p>
+            <p>Vítejte v Bůrgeru!</p>
+          </div>
+        <span id="typed"></span>
+        <p class="sub-title">Nejlepší místo na rychlý burger ve Zlíně dle 
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g608733-d8126636-Reviews-Burger-Zlin_Zlin_Region_Moravia.html">Tripadvisoru.</a></p>
+    </div>
+
+    <div class="content">
+      
+      <div class="about-page">
+        <div class="gallery">
+            <img src="images/photo3.jpeg">
+        </div>
+
+          <div class="about-text-1">
+            <p>
+              Rádi pro vás připravíme burgery z hovězího Angus nebo jehněčího masa.
+              Umíme i <b>vegetariánské</b> a <b>bezlepkové</b>. Mimo to si u nás pochutnáte i na salátech,
+              bruschettách a dalších specialitách. Bulky si připravujeme sami z naší <b>vlastní pece</b>.
+            </p>
+          </div>
+
+          <!-- Responsive Image Grid -->
+            <div class="photo-row">
+              <div class="photo-column">
+                <img src="images/food/food4.jpeg">
+                <img src="images/food/food7.jpeg">
+              </div>
+              <div class="photo-column">
+                <img src="images/food/food2.jpeg">
+                <img src="images/food/food5.jpeg">
+              </div>
+              <div class="photo-column">
+                <img src="images/food/food3.jpeg">
+                <img src="images/food/food11.jpeg">
+              </div>
+           
+            </div>
+
+          <!-- Google Maps -->  
+              <div class="about-text-1">
+                <p>
+                  Najdete nás v <b>centru Zlína</b> hned vedle Komenského parku
+                </p>
+              </div>  
+                <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.7505455038972!2d17.66384015071246!3d49.22425778272894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47137351ba6caff3%3A0x1159730447e20c81!2zQsWvcmdlcg!5e0!3m2!1scs!2scz!4v1640278058100!5m2!1scs!2scz" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        
+      </div>
+      
+    </div>
+<!-- FOOTER -->  
+    <div class="footer">
+      <div class="footer-logo">
+          <img src="images/logo.png" alt="Logo" class="logo">
+          <p>Školní 3362</p>
+          <p>760 01 Zlín</p>
+          <p>776 203 010</p>
+      </div>
+        <div class="footer-nav">  
+            <ul>
+              <li><a href="#">Úvod</a></li>
+              <li><a href="#">O nás</a></li>
+              <li><a href="#">Nabídka</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+          <div class="footer-social">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>  
+          </div>
+  </div>
+  </div>
+
+  <!-- UP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Zpět nahoru"><i class="fas fa-arrow-up"></i></button>
+
+</body>
+<!-- Javascript code for self-typing text -->
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 25,
+    backSpeed: 10
+  });
+</script>
+
+<!-- Javascript code for get back to top -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</html>
